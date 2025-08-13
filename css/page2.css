@@ -1,0 +1,171 @@
+body {
+    background-color: yellow;
+    overflow: hidden;
+}
+
+.cont-i {
+    transform: scale(.9);
+    position: relative;
+    top: -36px;
+}
+
+.head {
+    width: 50vh;
+    margin: auto;
+}
+
+.list {
+    width: 50vw;
+    margin: auto;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+}
+
+ol li>div {
+    display: flex;
+    padding: 12px;
+    gap: 40px;
+    margin-left: 30px;
+}
+
+.div-i {
+    background-color: teal;
+    animation: skew 4s ease-in-out 0s infinite;
+}
+
+@keyframes skew {
+    0% {
+        transform: skewX(-20deg);
+    }
+
+    50% {
+        transform: skew(20deg);
+    }
+
+    100% {
+        transform: skew(-20deg);
+    }
+}
+
+.div-ii {
+    background-color: rgb(68, 69, 69);
+    animation: div-ii 2s ease-in-out 0s infinite alternate-reverse;
+
+}
+
+@keyframes div-ii {
+    0% {
+        transform: skewX(-40deg);
+    }
+
+    100% {
+        transform: skewX(40deg);
+    }
+
+
+}
+
+.div-iii {
+    background-color: rgb(93, 50, 89);
+    animation: rotate 4s 0s ease-in-out infinite;
+
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.div-iv {
+    background-color: skyblue;
+    animation: compress 2s 0s linear infinite alternate;
+
+}
+
+@keyframes compress {
+    0% {}
+
+    100% {
+        transform: scaleY(.7);
+    }
+}
+
+.div-v {
+    background-color: maroon;
+    animation: div-v 2s linear 0s infinite alternate;
+}
+
+@keyframes div-v {
+    0% {}
+
+    100% {
+        transform: scaleX(.7);
+    }
+}
+
+.div-vi {
+    background-color: green;
+    animation: div-vi 2s ease-in-out 0s infinite alternate;
+}
+
+@keyframes div-vi {
+    0% {}
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+.link {
+    width: 50vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: scale(1.2);
+}
+
+.link a {
+    color: black;
+    text-decoration: none;
+}
+
+.link img {
+    width: 15px;
+}
+
+.link a:hover {
+    color: rgb(62, 12, 244);
+    padding: 12px 25px;
+    transform: scale(.9);
+    background-color: rgba(150, 150, 150, 0.244);
+    border-top: 4px solid red;
+    text-decoration: 2px dashed rgb(251, 150, 9);
+    /* content: url(media/go.jpeg); */
+
+}
+
+.link a:hover img {
+    content: url(/media/right\ arrow.png);
+    width: 18px;
+}
+
+.link a:active,
+.link a:focus {
+    background-color: black;
+    color: white;
+}
+
+.link a:hover .back {
+    transform: rotate(180deg);
+}

@@ -1,0 +1,83 @@
+body {
+    background-color: yellow;
+    /* overflow: hidden; */
+}
+
+.cont-i {
+    width: 50%;
+    margin: auto;
+    transform: scale(.85);
+    position: relative;
+    top: -71px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+}
+
+.div-i:hover,
+.div-iv:hover,
+.div-vi:hover {
+    width: 200px;
+    transition-duration: 3s;
+}
+
+.div-ii:hover,
+.div-v:hover {
+    width: 200px;
+    height: 200px;
+    transition: width 3s, height 4s;
+}
+
+.div-iii:hover {
+    transform: scaleX(2);
+    transform-origin: 0%;
+    transition-duration: 3s;
+}
+
+
+.link {
+    width: 50vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: scale(1.2);
+}
+
+.link a {
+    color: black;
+    text-decoration: none;
+}
+
+.link img {
+    width: 15px;
+}
+
+.link a:hover {
+    color: rgb(62, 12, 244);
+    padding: 12px 25px;
+    transform: scale(.9);
+    background-color: rgba(150, 150, 150, 0.244);
+    border-top: 4px solid red;
+    text-decoration: 2px dashed rgb(251, 150, 9);
+    /* content: url(media/go.jpeg); */
+
+}
+
+.link a:hover img {
+    content: url(/media/right\ arrow.png);
+    width: 18px;
+}
+
+.link a:active,
+.link a:focus {
+    background-color: black;
+    color: white;
+}
+
+.link a:hover .back {
+    transform: rotate(180deg);
+}
