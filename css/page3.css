@@ -68,7 +68,7 @@ body {
 }
 
 .link a:hover img {
-    content: url(/media/right\ arrow.png);
+    content: url(../media/right\ arrow.png);
     width: 18px;
 }
 
